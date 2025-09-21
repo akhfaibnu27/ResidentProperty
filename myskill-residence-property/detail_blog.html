@@ -60,11 +60,11 @@
     <!-- header -->
 
     <!-- container title -->
-    <section class="wrapper-content blog">
+    <section class="wrapper-content detail_blog">
         <div class="container-fluid">
             <div class="row" id="content-title">
                 <div class="col-md-12 text-center">
-                    <h2>Blog MySkill Residence</h2>
+                    <h2 id="title-blog">Example Title Blog</h2>
                 </div>
             </div>
         </div>
@@ -72,14 +72,21 @@
     <!-- container title -->
 
     <!-- section content -->
-    <div class="container pt-2 pb-4 mb-3 blog">
+    <div class="container pt-2 pb-4 mb-3 detail_blog">
         <div class="row">
-            <div class="col-md-9 mt-4 mb-4" id="blogContainer">
-                <!-- content dynamically generated -->
+            <div class="col-md-9 mt-4 mb-4">
+                <div class="card p-4">
+                    <img id="cardDetailImg" class="align-self-center" />
+                    <div class="blog-date d-flex text-center mt-3 align-self-center">
+                        <i class="fa fa-calendar me-2 mt-1"></i>
+                        <p id="tgl-blog">21 Maret 2024, 00:09 AM</p>
+                    </div>
+                    <iframe src="./content/blog-1.html" id="cardDetailBlog" class="w-100"></iframe>
+                </div>
             </div>
             <div class="col-md-3 mt-4 mb-4">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="search blog..." autocomplete="off" onchange="searchBlog(this)" />
+                    <input type="text" class="form-control" placeholder="search blog..." autocomplete="off" onchange="searchBlog(this)" disabled/>
                     <div class="latest-post mt-3 mb-3">
                         <p class="text-latest-post">LATEST POST</p>
                     </div>
